@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    basePath: '/sutan',
+    basePath: '/sutansite',
+    assetPrefix: '/sutansite/',
     images: {
       unoptimized: true,
     },
