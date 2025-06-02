@@ -1,12 +1,12 @@
+const isProd = process.env.NODE_ENV === 'production';
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    output: 'export',
-    basePath: '/sutansite',
-    assetPrefix: '/sutansite/',
-    images: {
-      unoptimized: true,
-    },
-  };
-  
-  export default nextConfig;
-  
+const config = {
+  output: 'export',
+  basePath: isProd ? '/sutansite' : '',
+  images: {
+    unoptimized: true,
+  },
+};
+
+export default config;
